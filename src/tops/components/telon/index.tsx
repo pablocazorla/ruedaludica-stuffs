@@ -51,7 +51,15 @@ const Telon = () => {
         <img src={d_right.src} alt="" />
       </div>
       <div className="telon_puesto puesto">Puesto nº</div>
-      <div className="telon_puesto num b">{element.num}</div>
+      <div
+        className={cx("telon_puesto num b", {
+          "text-orange-600": element.num > 10,
+          "text-zinc-400": element.num > 5 && element.num <= 10,
+          "text-amber-500": element.num <= 5,
+        })}
+      >
+        {element.num}
+      </div>
       <div className="telon_puesto num a">{element.num}</div>
       <div
         className="telon_btn"

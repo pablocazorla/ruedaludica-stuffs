@@ -1,32 +1,123 @@
 import type { Data } from "../models/data";
 
-const data: Data = {
+const dataRaw: Data = {
   title: "",
   accesit: [
     {
-      title: "Harmony",
-      img: "https://cf.geekdo-images.com/gui9f7BhR0K8qxt9UgNBPQ__original/img/7lPS_5dskRY1kGy88un6S0v1xVw=/0x0/filters:format(jpeg)/pic8103779.jpg",
+      title: "Piratas de Maracaibo",
+      img: "https://cf.geekdo-images.com/PIEVl_wd2gjdrVT0g-3-LA__imagepagezoom/img/icoEyGN4DRrSXHgE_0dmtzBljko=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic7662818.jpg",
+    },
+
+    {
+      title: "Tipperary",
+      img: "https://cf.geekdo-images.com/tRW-yz-omIwXn0P8ItGC4g__imagepagezoom/img/LIQDKlRFJgCBGgaUxmRSCXbAFn8=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic7318778.jpg",
     },
     {
-      title: "Vida en el Amazonas",
-      img: "https://cf.geekdo-images.com/lRk6_QqYHNM0Bb-6pFK7Jg__original/img/DbMI3Mizoyi00Dac6sAinW36LOk=/0x0/filters:format(png)/pic7002853.png",
+      title: "Votes for Woman",
+      img: "https://cf.geekdo-images.com/RotpVPn98B5sDSS8VTzTJQ__imagepagezoom/img/8sszPVJqQeAuKbipGEy6Wde_bK4=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic6430938.jpg",
     },
     {
-      title: "Imperial Steam",
-      img: "https://cf.geekdo-images.com/detq5U6nwb3WDd8ecKex_A__original/img/xiKG0vlm8yAd2EblILmPZovE0X8=/0x0/filters:format(jpeg)/pic6277816.jpg",
+      title: "Fountains",
+      img: "https://cf.geekdo-images.com/V_K4mmXJEZuwmmeFIn8Pbg__imagepagezoom/img/0ZOgbTKnZnlH196_PGWuFv0VEGs=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic8746818.jpg",
     },
     {
-      title: "Beast",
-      img: "https://cf.geekdo-images.com/-9NLgO6ASOHgZtMtamqjxw__original/img/h0pnI_UvkAQfMPhQq-7dKzEcHlc=/0x0/filters:format(png)/pic6418160.png",
-    },
-    {
-      title: "Tiwanaku",
-      img: "https://cf.geekdo-images.com/02c2OrgtQ7YsLZWm6pVXSw__original/img/2t4atmBxMzLKmhvy1xQvsLDI038=/0x0/filters:format(png)/pic6620308.png",
+      title: "GWT New Zealand",
+      img: "https://cf.geekdo-images.com/X4KaD6ADLW1ohOznNay7xg__imagepage/img/VKP3ZM5V8a8geUXB575UcZoYaFo=/fit-in/900x600/filters:no_upscale():strip_icc()/pic7350809.png",
     },
   ],
   list: [
     {
-      num: 10,
+      num: 0,
+      title: "Tiwanaku",
+      description: "",
+      images: [
+        "https://cf.geekdo-images.com/02c2OrgtQ7YsLZWm6pVXSw__original/img/2t4atmBxMzLKmhvy1xQvsLDI038=/0x0/filters:format(png)/pic6620308.png",
+        "https://cf.geekdo-images.com/YQUrjT68Dkixy22f7_3ZdA__imagepagezoom/img/hX_vUgD8F167P5XuZUEoe07ATCU=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic7377371.jpg",
+        "https://cf.geekdo-images.com/tNg4fvJ7C1aPYkm7FHZv8Q__original/img/Zay4PzHe04J3H01PjBOZQbmy27w=/0x0/filters:format(jpeg)/pic7377376.jpg",
+        "https://cf.geekdo-images.com/CdVzmPqTOPJWN4JogG5Kjg__original/img/VO6sVn01Y3s75YPMwJufagvNub4=/0x0/filters:format(jpeg)/pic7377378.jpg",
+        "https://cf.geekdo-images.com/LDmBm748YnWrv5l2rVHwIA__original/img/QpAiD3oINitFDucY7Ol_rnA3G0U=/0x0/filters:format(jpeg)/pic7449762.jpg",
+        "https://cf.geekdo-images.com/yMyFaqJOYlqZ8wp0ew_UEA__original/img/b4gLBxr4c47DAQlhDkdDu_kYFak=/0x0/filters:format(jpeg)/pic7445918.jpg",
+      ],
+      players: "1-4",
+      duration: "30-60min",
+      age: 14,
+      weight: 2.21,
+      year: 2022,
+    },
+    {
+      num: 0,
+      title: "Beast",
+      description: "",
+      images: [
+        "https://cf.geekdo-images.com/-9NLgO6ASOHgZtMtamqjxw__original/img/h0pnI_UvkAQfMPhQq-7dKzEcHlc=/0x0/filters:format(png)/pic6418160.png",
+        "https://cf.geekdo-images.com/nOAxjgVvuYZ3K8zOlXxZ4w__original/img/cso4gMkZAvaGXRy1p5sGZ_SV0i8=/0x0/filters:format(jpeg)/pic6036544.jpg",
+        "https://cf.geekdo-images.com/PjVrsQFjzyVkerFRjZXh9Q__original/img/S5KT2kL8uzNfxuvuTHlmHTQOtng=/0x0/filters:format(jpeg)/pic8704305.jpg",
+        "https://cf.geekdo-images.com/qs-Cq8aID-49ITdGQV1q3w__original/img/ETn_PspI_6JuCMVftnDj8Ct2cAk=/0x0/filters:format(jpeg)/pic6386819.jpg",
+        "https://cf.geekdo-images.com/WUlj4T6ve9Kd-zgUMGzhGw__original/img/5pihU4SXAC1CNkvAmgEmMoC2RJc=/0x0/filters:format(jpeg)/pic6415831.jpg",
+        "https://cf.geekdo-images.com/vOavbCvhAyxTl278IL7vGA__original/img/SB2tR5SDI8jRA7PlUa1aADXpilk=/0x0/filters:format(jpeg)/pic6415835.jpg",
+      ],
+      players: "2-4",
+      duration: "60-120min",
+      age: 14,
+      weight: 3.06,
+      year: 2023,
+    },
+    {
+      num: 0,
+      title: "Imperial Steam",
+      description: "",
+      images: [
+        "https://cf.geekdo-images.com/detq5U6nwb3WDd8ecKex_A__original/img/xiKG0vlm8yAd2EblILmPZovE0X8=/0x0/filters:format(jpeg)/pic6277816.jpg",
+        "https://cf.geekdo-images.com/NalFYyEof2KcyuAz1OIiYQ__original/img/rYQgaQeUIDqx-nQkPfx7dve4gNQ=/0x0/filters:format(jpeg)/pic6280504.jpg",
+        "https://cf.geekdo-images.com/-FSwZlVSWMRuz2hzRNsBxA__original/img/ROgDVCy2cuab0RdabstGw3hbHrg=/0x0/filters:format(jpeg)/pic6299432.jpg",
+        "https://cf.geekdo-images.com/xUtBeppBmCLktJGNNjvaIw__original/img/2nmfM0Cc7DnmHQ1UKlpQfqV7FT4=/0x0/filters:format(jpeg)/pic6348290.jpg",
+        "https://cf.geekdo-images.com/uU_g8R0-rM5ADvtHl0-0zw__imagepagezoom/img/SdT_D5glnBqfhbgllVRHUUBRTXY=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic6495493.jpg",
+        "https://cf.geekdo-images.com/Qh37LmRMrqwL5f3Cnghy4w__original/img/HZAw_a_aztpSJ4x1LZ8KFDeA8aw=/0x0/filters:format(jpeg)/pic6495494.jpg",
+      ],
+      players: "2-4",
+      duration: "120min",
+      age: 12,
+      weight: 4.21,
+      year: 2021,
+    },
+    {
+      num: 0,
+      title: "Vida en el Amazonas",
+      description: "",
+      images: [
+        "https://cf.geekdo-images.com/lRk6_QqYHNM0Bb-6pFK7Jg__original/img/DbMI3Mizoyi00Dac6sAinW36LOk=/0x0/filters:format(png)/pic7002853.png",
+        "https://cf.geekdo-images.com/-_M4xnLJqvuJ6gZ_6PlN1Q__original/img/XAIe9wj-8g7MrpLOHfzWalGAAcA=/0x0/filters:format(jpeg)/pic7102878.jpg",
+        "https://cf.geekdo-images.com/6QaZYtAQC-ViMy7y_rYfQw__original/img/Vcm017QtE4GRYDGM_KEnBRcv4pE=/0x0/filters:format(jpeg)/pic7106936.jpg",
+        "https://cf.geekdo-images.com/qrbpZfbC5TSVEGT_w7vz_w__original/img/tvit2aeta3-h8xyQDmYo8dcyQd0=/0x0/filters:format(jpeg)/pic7102875.jpg",
+        "https://cf.geekdo-images.com/3LHFP2mjz6hSK3YhIWSAJQ__original/img/NaNdqMH8LfJnbW-78se7ae7MXkE=/0x0/filters:format(jpeg)/pic7106935.jpg",
+        "https://cf.geekdo-images.com/DYbTtcSmueyFYEGkoqIboQ__original/img/yiJsjuSgbk29DtjDMc6t85-yysM=/0x0/filters:format(jpeg)/pic8453605.jpg",
+      ],
+      players: "1-4",
+      duration: "60-150min",
+      age: 14,
+      weight: 2.83,
+      year: 2023,
+    },
+    {
+      num: 0,
+      title: "Harmony",
+      description: "",
+      images: [
+        "https://cf.geekdo-images.com/gui9f7BhR0K8qxt9UgNBPQ__original/img/7lPS_5dskRY1kGy88un6S0v1xVw=/0x0/filters:format(jpeg)/pic8103779.jpg",
+        "https://cf.geekdo-images.com/q-ZQAC7sgO_Q5Ur_KycVyQ__original/img/LSBgepnUdimZ-X8YzxpSn8SJ7eg=/0x0/filters:format(jpeg)/pic8487701.jpg",
+        "https://cf.geekdo-images.com/Jlyq5UVG338JC3liSe3BgA__original/img/XoDgvippjoBslkx70b5P0PXYq_0=/0x0/filters:format(jpeg)/pic8487686.jpg",
+        "https://cf.geekdo-images.com/pLZjVnz5804fY_39Jy8MJw__original/img/syuUtC0J5b1h1IThe84sXM_cegs=/0x0/filters:format(jpeg)/pic8229806.jpg",
+        "https://cf.geekdo-images.com/EKrmPzaUIlR6k6BizLAk7A__original/img/dEZWAvPHH44j4XFC05obH-ibq5s=/0x0/filters:format(jpeg)/pic8487685.jpg",
+        "https://cf.geekdo-images.com/LEGbvfSWt3pysJ9urTG3eg__original/img/w2HE7xD7oo8_lS4aGX9ru84xS8A=/0x0/filters:format(jpeg)/pic8528281.jpg",
+      ],
+      players: "1-4",
+      duration: "40-90min",
+      age: 10,
+      weight: 2.79,
+      year: 2024,
+    },
+    {
+      num: 0,
       title: "Glen More II: Crónicas",
       description: "",
       images: [
@@ -44,7 +135,7 @@ const data: Data = {
       year: 2019,
     },
     {
-      num: 9,
+      num: 0,
       title: "Rise & Fall",
       description: "",
       images: [
@@ -62,7 +153,7 @@ const data: Data = {
       year: 2024,
     },
     {
-      num: 8,
+      num: 0,
       title: "Beyond the Horizon",
       description: "",
       images: [
@@ -80,7 +171,7 @@ const data: Data = {
       year: 2024,
     },
     {
-      num: 7,
+      num: 0,
       title: "Age of Innovation",
       description: "",
       images: [
@@ -98,7 +189,7 @@ const data: Data = {
       year: 2023,
     },
     {
-      num: 6,
+      num: 0,
       title: "Earthborne Rangers",
       description: "",
       images: [
@@ -116,7 +207,7 @@ const data: Data = {
       year: 2023,
     },
     {
-      num: 5,
+      num: 0,
       title: "Dwellings of Eldervale",
       description: "",
       images: [
@@ -134,7 +225,7 @@ const data: Data = {
       year: 2020,
     },
     {
-      num: 4,
+      num: 0,
       title: "Eternal Decks",
       description: "",
       images: [
@@ -152,7 +243,7 @@ const data: Data = {
       year: 2025,
     },
     {
-      num: 3,
+      num: 0,
       title: "Boss Fighter QR",
       description: "",
       images: [
@@ -170,7 +261,7 @@ const data: Data = {
       year: 2025,
     },
     {
-      num: 2,
+      num: 0,
       title: "ESDLA: El Destino de la Comunidad",
       description: "",
       images: [
@@ -188,7 +279,7 @@ const data: Data = {
       year: 2025,
     },
     {
-      num: 1,
+      num: 0,
       title: "Criaturas Maravillosas",
       description: "",
       images: [
@@ -206,6 +297,18 @@ const data: Data = {
       year: 2024,
     },
   ],
+};
+
+const length = dataRaw.list.length;
+
+const data: Data = {
+  ...dataRaw,
+  list: dataRaw.list.map((item, k) => {
+    return {
+      ...item,
+      num: length - k,
+    };
+  }),
 };
 
 export default data;

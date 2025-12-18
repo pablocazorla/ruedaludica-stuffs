@@ -1,5 +1,18 @@
 ---
 import Layout from "@/common/Layout.astro";
+import ListOrderer from "@/list-orderer/App";
 ---
 
-<Layout> LIST ORDERED </Layout>
+<Layout title="List Orderer">
+  <ListOrderer client:load />
+</Layout>
+
+<style>
+  body {
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+    background-color: #111;
+    color: #fff;
+  }
+</style>

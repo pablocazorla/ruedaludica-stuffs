@@ -1,0 +1,368 @@
+:root {
+  --telon_puesto_duration: 0.5s;
+  --telon_puesto_delay: 2s;
+  --telon_a_duration: 0.9s;
+  --telon_a_delay: 0.8s;
+  --telon_b_duration: 0.7s;
+  --telon_b_delay: 0.4s;
+  --telon_c_duration: 0.5s;
+  --telon_c_delay: 0s;
+  --telon_d_duration: 0.4s;
+  --telon_d_delay: 0.2s;
+  --telon_btn_delay: 3s;
+  font-family: "Montserrat";
+
+  --title_duration_in: 0.7s;
+  --title_delay_in: 3.5s;
+  --title_duration_out: 0.01s;
+  --title_delay_out: 2.2s;
+
+  --dimmer_color_1: rgba(0, 0, 0, 0.5);
+  --dimmer_color_2: rgba(0, 0, 0, 0.6);
+}
+
+.telon {
+  user-select: none;
+  overflow: hidden;
+
+  z-index: 200;
+
+  .telon_btn {
+    opacity: 0;
+    /* background-color: #000; */
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 40vw;
+    height: 50vh;
+    cursor: pointer;
+
+    /* transition: all 0.01s ease-in-out var(--telon_btn_delay); */
+  }
+
+  .telon_puesto {
+    cursor: default;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    text-align: center;
+
+    transition: opacity var(--telon_puesto_duration) ease-in-out
+      var(--telon_puesto_delay);
+
+    &.puesto {
+      text-transform: uppercase;
+      font-size: 6vw;
+      line-height: 1;
+      font-weight: bold;
+      mix-blend-mode: color-dodge;
+      color: #adadad;
+      padding-bottom: 12vw;
+      text-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+    }
+    &.num {
+      font-size: 14vw;
+      line-height: 1;
+      font-weight: bold;
+      padding-top: 6vw;
+
+      &.a {
+        color: #000;
+        mix-blend-mode: color-dodge;
+        text-shadow: -5px -5px 0px rgba(255, 255, 255, 1);
+        filter: blur(5px);
+        margin-top: 5px;
+        margin-left: 5px;
+      }
+
+      &.b {
+        color: var(--color-amber-500);
+
+        text-shadow: 0px 10px 10px rgba(0, 0, 0, 1);
+      }
+    }
+  }
+  .telon_a {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+
+    &.telon_left {
+      left: 0;
+      background-position: bottom left;
+
+      transition: all var(--telon_a_duration) ease-in-out var(--telon_a_delay);
+    }
+
+    &.telon_right {
+      right: 0;
+      background-position: bottom right;
+
+      transition: all var(--telon_a_duration) ease-in-out var(--telon_a_delay);
+    }
+  }
+
+  .telon_b {
+    position: absolute;
+    top: 0;
+    height: 100%;
+
+    img {
+      display: block;
+      width: auto;
+      height: 100%;
+    }
+
+    &.telon_left {
+      left: 0;
+      transition: left var(--telon_b_duration) ease-in-out var(--telon_b_delay);
+    }
+
+    &.telon_right {
+      right: 0;
+      transition: right var(--telon_b_duration) ease-in-out var(--telon_b_delay);
+    }
+  }
+
+  .telon_c {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    transition: top var(--telon_c_duration) ease-in-out var(--telon_c_delay);
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .telon_d {
+    position: absolute;
+    top: 0;
+    height: 100%;
+
+    img {
+      display: block;
+      width: auto;
+      height: 46%;
+    }
+
+    &.telon_left {
+      left: 0;
+      transition: left var(--telon_d_duration) ease-in-out var(--telon_d_delay);
+    }
+
+    &.telon_right {
+      right: 0;
+      transition: right var(--telon_d_duration) ease-in-out var(--telon_d_delay);
+    }
+  }
+  /**/
+
+  &.is_open {
+    .telon_btn {
+      transition: none;
+      bottom: 0%;
+      height: 12vh;
+      transform: translate(-50%, 0%);
+    }
+    .telon_puesto {
+      transform: translate(-50%, -50%) scale(0.8);
+      transition: all var(--telon_puesto_duration) ease-in-out;
+      opacity: 0;
+    }
+    .telon_a.telon_left {
+      left: -50.5%;
+      opacity: 0.6;
+    }
+
+    .telon_a.telon_right {
+      right: -50.5%;
+      opacity: 0.6;
+    }
+
+    .telon_b.telon_left {
+      left: -30%;
+    }
+
+    .telon_b.telon_right {
+      right: -30%;
+    }
+
+    .telon_c {
+      top: -15.5%;
+    }
+
+    .telon_d.telon_left {
+      left: -10.5%;
+    }
+
+    .telon_d.telon_right {
+      right: -10.5%;
+    }
+  }
+}
+
+.gallery {
+  .title {
+    position: absolute;
+    z-index: 20;
+    bottom: 50%;
+    left: 15%;
+    width: 70%;
+    transform: translate(0%, 50%);
+
+    transition: all var(--title_duration_out) ease-in-out var(--title_delay_out);
+  }
+
+  .title_text {
+    font-size: 3vw;
+    line-height: 1;
+    font-weight: bold;
+    text-shadow: 0px 3px 8px rgba(0, 0, 0, 1);
+    margin-bottom: 16px;
+  }
+
+  .title_num {
+    opacity: 0;
+    transition: opacity var(--title_duration_out) ease-in-out
+      var(--title_delay_out);
+  }
+
+  .title_badge {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 500;
+    width: 120px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10%;
+    background-color: #000;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    transition: opacity var(--title_duration_out) ease-in-out
+      var(--title_delay_out);
+
+    svg {
+      margin: 0 auto;
+      font-size: 30px;
+      margin-bottom: 4px;
+    }
+  }
+
+  .dimmer_1 {
+    z-index: 15;
+    opacity: 1;
+    background-color: var(--dimmer_color_1);
+    backdrop-filter: blur(5px);
+    transition: opacity var(--title_duration_out) ease-in-out
+      var(--title_delay_out);
+  }
+
+  .dimmer_2 {
+    z-index: 16;
+    opacity: 0;
+    background: linear-gradient(
+      0deg,
+      var(--dimmer_color_2) 0%,
+      var(--dimmer_color_2) 15%,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    backdrop-filter: blur(0px);
+    transition: opacity var(--title_duration_in) ease-in-out
+      var(--title_delay_in);
+  }
+
+  .dimmer_1,
+  .dimmer_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  .gallery_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(1);
+
+    transition: opacity 0.7s ease-in, transform 20s linear;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &.prev_visible {
+      z-index: 8;
+    }
+
+    &.visible {
+      z-index: 10;
+    }
+
+    &.prev_visible,
+    &.visible {
+      opacity: 1;
+      transform: scale(1.5);
+    }
+  }
+
+  &.telon_is_open {
+    .title {
+      bottom: 0.8%;
+      transform: translate(0%, 0%);
+      font-size: 3vw;
+      text-shadow: 0px 1px 6px rgba(0, 0, 0, 1);
+      transition: all var(--title_duration_in) ease-in-out var(--title_delay_in);
+    }
+    .dimmer_1 {
+      opacity: 0;
+      transition: opacity var(--title_duration_in) ease-in-out
+        var(--title_delay_in);
+    }
+    .dimmer_2 {
+      opacity: 1;
+      transition: opacity var(--title_duration_in) ease-in-out
+        var(--title_delay_in);
+    }
+
+    .title_num {
+      opacity: 1;
+      transition: opacity var(--title_duration_in) ease-in-out
+        var(--title_delay_in);
+    }
+    .title_badge {
+      opacity: 0.6;
+      transition: opacity var(--title_duration_in) ease-in-out
+        var(--title_delay_in);
+    }
+  }
+}
+
+.accesit {
+  transition: opacity 0.7s ease-in-out;
+}

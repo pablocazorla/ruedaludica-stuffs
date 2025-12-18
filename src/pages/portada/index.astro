@@ -1,5 +1,20 @@
 ---
 import Layout from "@/common/Layout.astro";
+import Portada from "@/portada/App";
 ---
 
-<Layout> PORTADA </Layout>
+<Layout title="Portada">
+  <Portada client:load />
+</Layout>
+
+<style>
+  body {
+    background-color: #333;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  .scrollbar-custom {
+    scrollbar-color: #666b72 #000;
+  }
+</style>

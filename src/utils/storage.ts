@@ -2,7 +2,7 @@ const DEFAULT_STORAGE_KEYNAME = "ruedaludica-stuffs";
 
 const createStorage = (STORAGE_KEYNAME: string = DEFAULT_STORAGE_KEYNAME) => {
   const get = () => {
-    const value = localStorage.getItem(DEFAULT_STORAGE_KEYNAME);
+    const value = localStorage.getItem(STORAGE_KEYNAME);
     return value ? JSON.parse(value) : null;
   };
 
@@ -26,6 +26,7 @@ const createStorage = (STORAGE_KEYNAME: string = DEFAULT_STORAGE_KEYNAME) => {
 
   return {
     get,
+    set,
     update,
     clear,
   };

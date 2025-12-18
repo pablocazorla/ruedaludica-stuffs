@@ -12,6 +12,10 @@ const list: List[] = [
     title: "List Orderer",
     path: "list-orderer",
   },
+  {
+    title: "Tops",
+    path: "tops",
+  },
 ];
 
 export default list;

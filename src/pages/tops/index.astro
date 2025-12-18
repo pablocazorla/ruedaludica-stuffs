@@ -1,0 +1,14 @@
+---
+import Layout from "@/common/Layout.astro";
+import Tops from "@/tops/main.tsx";
+---
+
+<Layout title="Top 10">
+  <Tops client:load />
+</Layout>
+<style>
+  body {
+    background-color: #000;
+    color: #fff;
+  }
+</style>

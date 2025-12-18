@@ -1,0 +1,38 @@
+---
+import Layout from "@/common/Layout.astro";
+import list from "@/common/list.ts";
+---
+
+<Layout>
+  <div class="w-full h-screen flex flex-col p-4 justify-center">
+    <div>
+      <div class="max-w-sm mx-auto">
+        <h1 class="text-2xl font-bold mb-5">Rueda Lúdica Stuffs</h1>
+        <nav>
+          <ul class="space-y-3">
+            {
+              list.map((item) => (
+                <li>
+                  <a
+                    href={item.path}
+                    class="flex items-center justify-between py-2 px-4 rounded-md bg-pink-900 text-white font-bold hover:bg-pink-600 transition-colors"
+                  >
+                    {item.title}
+                    <span>➡️</span>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  body {
+    background-color: #1f2937;
+    color: #fff;
+  }
+</style>

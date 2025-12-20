@@ -1,8 +1,9 @@
+import { useContext, useState } from "react";
+import Accesit from "./components/accesit";
+import BggLink from "./components/bgg-link";
 import Gallery from "./components/gallery";
 import Telon from "./components/telon";
-import Accesit from "./components/accesit";
 import MainContext from "./context";
-import { useContext, useState } from "react";
 
 function App() {
   const { loading } = useContext(MainContext);
@@ -17,6 +18,7 @@ function App() {
     <>
       <Gallery />
       <Telon />
+      <BggLink />
     </>
   ) : (
     <Accesit setStartedTop10={setStartedTop10} />

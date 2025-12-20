@@ -4,10 +4,17 @@ const dataRaw: Data = {
   title: "",
   accesit: [
     {
-      title: "Piratas de Maracaibo",
-      img: "https://cf.geekdo-images.com/PIEVl_wd2gjdrVT0g-3-LA__imagepagezoom/img/icoEyGN4DRrSXHgE_0dmtzBljko=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic7662818.jpg",
+      title: "Fountains",
+      img: "https://cf.geekdo-images.com/V_K4mmXJEZuwmmeFIn8Pbg__imagepagezoom/img/0ZOgbTKnZnlH196_PGWuFv0VEGs=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic8746818.jpg",
     },
-
+    {
+      title: "Finca",
+      img: "https://cf.geekdo-images.com/U7n2gtbgu2IpEGs8YePYlQ__original/img/JDYLSVGE5CTt__nA1lLb7hBnmAw=/0x0/filters:format(png)/pic8520431.png",
+    },
+    {
+      title: "Through Ice & Snow",
+      img: "https://cf.geekdo-images.com/a2axYlIe13E3vPjPtjW8LA__original/img/w-3Ukb3mczjog-GYf3qS3lvUPco=/0x0/filters:format(jpeg)/pic6820369.jpg",
+    },
     {
       title: "Tipperary",
       img: "https://cf.geekdo-images.com/tRW-yz-omIwXn0P8ItGC4g__imagepagezoom/img/LIQDKlRFJgCBGgaUxmRSCXbAFn8=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic7318778.jpg",
@@ -16,20 +23,34 @@ const dataRaw: Data = {
       title: "Votes for Woman",
       img: "https://cf.geekdo-images.com/RotpVPn98B5sDSS8VTzTJQ__imagepagezoom/img/8sszPVJqQeAuKbipGEy6Wde_bK4=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic6430938.jpg",
     },
-    {
-      title: "Fountains",
-      img: "https://cf.geekdo-images.com/V_K4mmXJEZuwmmeFIn8Pbg__imagepagezoom/img/0ZOgbTKnZnlH196_PGWuFv0VEGs=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic8746818.jpg",
-    },
-    {
-      title: "GWT New Zealand",
-      img: "https://cf.geekdo-images.com/X4KaD6ADLW1ohOznNay7xg__imagepage/img/VKP3ZM5V8a8geUXB575UcZoYaFo=/fit-in/900x600/filters:no_upscale():strip_icc()/pic7350809.png",
-    },
   ],
   list: [
     {
       num: 0,
+      title: "Piratas de Maracaibo",
+      bgg_id: "397385",
+      author: "Ralph Bienert, Ryan Hendrickson, Alexander Pfister",
+      artist: "Christian Fiore, Odysseas Stamoglou",
+      images: [
+        "https://cf.geekdo-images.com/PIEVl_wd2gjdrVT0g-3-LA__imagepagezoom/img/icoEyGN4DRrSXHgE_0dmtzBljko=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic7662818.jpg",
+        "https://cf.geekdo-images.com/fMDF-wQesGnR7Pt31K2rcg__original/img/a3-S-uFTmIFATtrASDMBhJ8jSow=/0x0/filters:format(jpeg)/pic7860579.jpg",
+        "https://cf.geekdo-images.com/M2-vQGEGUlpgjnr3MMOFiw__original/img/EOV-MXFOND52fCxF411uWNmEDwg=/0x0/filters:format(jpeg)/pic7860580.jpg",
+        "https://cf.geekdo-images.com/HLCTdD-JlkROl1P_OdjPTg__original/img/xmA1u-G4tvWnsdmOzaYRo-1ybCU=/0x0/filters:format(jpeg)/pic7860587.jpg",
+        "https://cf.geekdo-images.com/UYaKS1r7wzimzwFTnCAh0g__original/img/tw-egFCxcRWzOPRmz5bpJVyn1Ac=/0x0/filters:format(jpeg)/pic7947831.jpg",
+        "https://cf.geekdo-images.com/KSvS-fDRryhu6t5Ul7eLvA__original/img/iNczYGd_-hTTOvhQT_e-FeLSInE=/0x0/filters:format(jpeg)/pic8042159.jpg",
+      ],
+      players: "1-4",
+      duration: "40-100min",
+      age: 12,
+      weight: 2.86,
+      year: 2023,
+    },
+    {
+      num: 0,
       title: "Tiwanaku",
-      description: "",
+      bgg_id: "267979",
+      author: "Olivier Grégoire",
+      artist: "Raphaël Samakh",
       images: [
         "https://cf.geekdo-images.com/02c2OrgtQ7YsLZWm6pVXSw__original/img/2t4atmBxMzLKmhvy1xQvsLDI038=/0x0/filters:format(png)/pic6620308.png",
         "https://cf.geekdo-images.com/YQUrjT68Dkixy22f7_3ZdA__imagepagezoom/img/hX_vUgD8F167P5XuZUEoe07ATCU=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic7377371.jpg",
@@ -47,7 +68,9 @@ const dataRaw: Data = {
     {
       num: 0,
       title: "Beast",
-      description: "",
+      bgg_id: "281549",
+      author: "Aron Midhall, Elon Midhall, Assar Pettersson",
+      artist: "Aron Midhall",
       images: [
         "https://cf.geekdo-images.com/-9NLgO6ASOHgZtMtamqjxw__original/img/h0pnI_UvkAQfMPhQq-7dKzEcHlc=/0x0/filters:format(png)/pic6418160.png",
         "https://cf.geekdo-images.com/nOAxjgVvuYZ3K8zOlXxZ4w__original/img/cso4gMkZAvaGXRy1p5sGZ_SV0i8=/0x0/filters:format(jpeg)/pic6036544.jpg",
@@ -65,7 +88,9 @@ const dataRaw: Data = {
     {
       num: 0,
       title: "Imperial Steam",
-      description: "",
+      bgg_id: "338760",
+      author: "Alexander Huemer",
+      artist: "Andreas Resch",
       images: [
         "https://cf.geekdo-images.com/detq5U6nwb3WDd8ecKex_A__original/img/xiKG0vlm8yAd2EblILmPZovE0X8=/0x0/filters:format(jpeg)/pic6277816.jpg",
         "https://cf.geekdo-images.com/NalFYyEof2KcyuAz1OIiYQ__original/img/rYQgaQeUIDqx-nQkPfx7dve4gNQ=/0x0/filters:format(jpeg)/pic6280504.jpg",
@@ -83,7 +108,9 @@ const dataRaw: Data = {
     {
       num: 0,
       title: "Vida en el Amazonas",
-      description: "",
+      bgg_id: "368305",
+      author: "Jamie Bloom",
+      artist: "Sophia Kang",
       images: [
         "https://cf.geekdo-images.com/lRk6_QqYHNM0Bb-6pFK7Jg__original/img/DbMI3Mizoyi00Dac6sAinW36LOk=/0x0/filters:format(png)/pic7002853.png",
         "https://cf.geekdo-images.com/-_M4xnLJqvuJ6gZ_6PlN1Q__original/img/XAIe9wj-8g7MrpLOHfzWalGAAcA=/0x0/filters:format(jpeg)/pic7102878.jpg",
@@ -100,26 +127,10 @@ const dataRaw: Data = {
     },
     {
       num: 0,
-      title: "Harmony",
-      description: "",
-      images: [
-        "https://cf.geekdo-images.com/gui9f7BhR0K8qxt9UgNBPQ__original/img/7lPS_5dskRY1kGy88un6S0v1xVw=/0x0/filters:format(jpeg)/pic8103779.jpg",
-        "https://cf.geekdo-images.com/q-ZQAC7sgO_Q5Ur_KycVyQ__original/img/LSBgepnUdimZ-X8YzxpSn8SJ7eg=/0x0/filters:format(jpeg)/pic8487701.jpg",
-        "https://cf.geekdo-images.com/Jlyq5UVG338JC3liSe3BgA__original/img/XoDgvippjoBslkx70b5P0PXYq_0=/0x0/filters:format(jpeg)/pic8487686.jpg",
-        "https://cf.geekdo-images.com/pLZjVnz5804fY_39Jy8MJw__original/img/syuUtC0J5b1h1IThe84sXM_cegs=/0x0/filters:format(jpeg)/pic8229806.jpg",
-        "https://cf.geekdo-images.com/EKrmPzaUIlR6k6BizLAk7A__original/img/dEZWAvPHH44j4XFC05obH-ibq5s=/0x0/filters:format(jpeg)/pic8487685.jpg",
-        "https://cf.geekdo-images.com/LEGbvfSWt3pysJ9urTG3eg__original/img/w2HE7xD7oo8_lS4aGX9ru84xS8A=/0x0/filters:format(jpeg)/pic8528281.jpg",
-      ],
-      players: "1-4",
-      duration: "40-90min",
-      age: 10,
-      weight: 2.79,
-      year: 2024,
-    },
-    {
-      num: 0,
       title: "Glen More II: Crónicas",
-      description: "",
+      bgg_id: "265188",
+      author: "Matthias Cramer",
+      artist: "Jason Coates, Hendrik Noack",
       images: [
         "https://cf.geekdo-images.com/sMRuph3HFUcaSpJZihGZKw__original/img/ehoqoTirtFb5p9Wk2SwWV8nr6ZU=/0x0/filters:format(jpeg)/pic5841874.jpg",
         "https://cf.geekdo-images.com/3MPwF1UsirfmjRyE8ljJQw__original/img/d1dxznCNYh3y8f-DBWUVrydK70A=/0x0/filters:format(jpeg)/pic5876859.jpg",
@@ -137,7 +148,9 @@ const dataRaw: Data = {
     {
       num: 0,
       title: "Rise & Fall",
-      description: "",
+      bgg_id: "275912",
+      author: "Christophe Boelinger",
+      artist: "Dogan Oztel, Sabrina Tobal, Dave Youkovich",
       images: [
         "https://cf.geekdo-images.com/lwKNNPgHt9qtfTYtRkJHsA__original/img/6Vp1vXv9GqBvldMj8g7sri3LmFU=/0x0/filters:format(png)/pic8861031.png",
         "https://cf.geekdo-images.com/XZooNeSq4bOHz0RrT5JWFg__original/img/Fbplg7oeKqAPT7ql3zyr8jOlAd4=/0x0/filters:format(jpeg)/pic9073291.jpg",
@@ -155,7 +168,9 @@ const dataRaw: Data = {
     {
       num: 0,
       title: "Beyond the Horizon",
-      description: "",
+      bgg_id: "421310",
+      author: "Dennis K. Chan, Adam Hill, Ben Pinchback, Matt Riddle",
+      artist: "Agnieszka Dabrowiecka, Klemens Franz",
       images: [
         "https://cf.geekdo-images.com/yaCOVF7EN1T3y1RDLPqpXg__original/img/PhkICKHT-Epybo34UWro5-_kp4k=/0x0/filters:format(jpeg)/pic8209513.jpg",
         "https://cf.geekdo-images.com/L4kSImWovu-9hkXRmpV0Fw__original/img/U_aXhe-EDPEPFQDHquzA1Klvysg=/0x0/filters:format(jpeg)/pic8945875.jpg",
@@ -173,7 +188,9 @@ const dataRaw: Data = {
     {
       num: 0,
       title: "Age of Innovation",
-      description: "",
+      bgg_id: "383179",
+      author: "Helge Ostertag",
+      artist: "Álvaro Calvo Escudero, Lukas Siegmon",
       images: [
         "https://cf.geekdo-images.com/D1vrcFEptCEoD8Z6s_iRfw__original/img/1vY0K3wSqlYXq0JEylSI-7agxKs=/0x0/filters:format(jpeg)/pic7430993.jpg",
         "https://cf.geekdo-images.com/nFHBCkK40Qh_hH9_QOAohA__original/img/aiRyupU_WuYqdo72hmPnpbd7iT0=/0x0/filters:format(jpeg)/pic7644895.jpg",
@@ -191,7 +208,10 @@ const dataRaw: Data = {
     {
       num: 0,
       title: "Earthborne Rangers",
-      description: "",
+      bgg_id: "342900",
+      author:
+        "Andrew Fischer, Brooks Flugaur-Leavitt, Andrew Navaro, Adam Sadler, Brady Sadler",
+      artist: "Joe Banner (II), Evan Simonet",
       images: [
         "https://cf.geekdo-images.com/EVfMwPiHmxDUvY32BbghBg__original/img/5hdiPHjIRQIFtAJETm4biy3ZfrI=/0x0/filters:format(jpeg)/pic7378384.jpg",
         "https://cf.geekdo-images.com/JcbLvx_z8XKAR07XaG446w__original/img/NgMOYBA3GPY6dMKv1XESr0UlRFM=/0x0/filters:format(jpeg)/pic7757611.jpg",
@@ -209,7 +229,10 @@ const dataRaw: Data = {
     {
       num: 0,
       title: "Dwellings of Eldervale",
-      description: "",
+      bgg_id: "271055",
+      author: "Luke Laurie",
+      artist:
+        "Merilliza Chan, Sergio Chaves, Anton Fadeev, Leesha Hannigan + 6 más",
       images: [
         "https://cf.geekdo-images.com/qJQXn0kvzvHBKWzSQN7vpw__original/img/NAq9RfDsv-qPEsco3W0ES8ofHEA=/0x0/filters:format(jpeg)/pic4742944.jpg",
         "https://cf.geekdo-images.com/rKMtU7exugx7U3VS9g0FeQ__original/img/JX-fgsvQUl7J08gBaoNpimRM_tM=/0x0/filters:format(jpeg)/pic4845774.jpg",
@@ -227,7 +250,9 @@ const dataRaw: Data = {
     {
       num: 0,
       title: "Eternal Decks",
-      description: "",
+      bgg_id: "424981",
+      author: "Hiroken",
+      artist: "MUJUNSHA",
       images: [
         "https://cf.geekdo-images.com/Bo6QYIQWzRRcn7KyO3AIPg__original/img/eQ-YojBJLh3FFFa_Cn-bbHbs-wk=/0x0/filters:format(png)/pic8512516.png",
         "https://cf.geekdo-images.com/dKzPtVx8wwqOaf6wrF9q0g__original/img/I6IPqo40p8iTICmncrGujD36XJs=/0x0/filters:format(jpeg)/pic8749957.jpg",
@@ -245,7 +270,10 @@ const dataRaw: Data = {
     {
       num: 0,
       title: "Boss Fighter QR",
-      description: "",
+      bgg_id: "454672",
+      author: "Michael Palm, Lukas Zach",
+      artist:
+        "Artur Fast, Maximilian Jasionowski, Bartłomiej Kordowski, Timo Mimus",
       images: [
         "https://cf.geekdo-images.com/a2z9VGqVHoXZ13fZtNfMdA__original/img/D9F8ICLytDgYtXw77G_e7dvIZSU=/0x0/filters:format(jpeg)/pic9114734.jpg",
         "https://cf.geekdo-images.com/svKc6SvqHTpKDHB8HuxBcw__original/img/QzSelNJzRjRokNCDT-r1JJlxFDI=/0x0/filters:format(jpeg)/pic9190144.jpg",
@@ -263,7 +291,9 @@ const dataRaw: Data = {
     {
       num: 0,
       title: "ESDLA: El Destino de la Comunidad",
-      description: "",
+      bgg_id: "436217",
+      author: "Matt Leacock",
+      artist: "Jared Blando, Cory Godbey",
       images: [
         "https://cf.geekdo-images.com/scw36iBIad7l-rGzxPGcGg__original/img/JZKAg-ETtE7z3YbgSMPd242rCqE=/0x0/filters:format(png)/pic8662670.png",
         "https://cf.geekdo-images.com/GQf1fyDqN9N3_f3emutkNQ__original/img/_Fs4QGZdhFCubaU7X9q14ZlB2aY=/0x0/filters:format(jpeg)/pic9063332.jpg",
@@ -281,7 +311,9 @@ const dataRaw: Data = {
     {
       num: 0,
       title: "Criaturas Maravillosas",
-      description: "",
+      bgg_id: "400366",
+      author: "Yeom.C.W",
+      artist: "Sophia Kang",
       images: [
         "https://cf.geekdo-images.com/3ue_3La0WYopTSDER3shUA__original/img/fm8i0N9fCQRGqNHgk0jh0gk01Ww=/0x0/filters:format(jpeg)/pic8389014.jpg",
         "https://cf.geekdo-images.com/6p6fXnSwF88nvSK6xXME5Q__original/img/L1eBpOdlEH1iM20Wjsb5XYAchEo=/0x0/filters:format(jpeg)/pic7802866.jpg",
@@ -310,5 +342,87 @@ const data: Data = {
     };
   }),
 };
+
+/*
+
+15- Los Pilares de la Tierra
+14- Rock Hard 1977
+13- Clank! Catacumbas
+12- Dominations: Road to Civilization
+11- Scholars of the South Tigris
+10- Pagan: Fate of Roanoke
+9- Cloudspire
+8- Stationfall
+7- Harmony
+6- Harmonies
+5- GWT- New Zealand
+4- Sky Team
+3- Doggerland
+2- Keep the Heroes Out!
+1- Wonderland's Wars
+*/
+
+export const previousTop = [
+  {
+    num: 15,
+    title: "Los Pilares de la Tierra",
+  },
+  {
+    num: 14,
+    title: "Rock Hard 1977",
+  },
+  {
+    num: 13,
+    title: "Clank! Catacumbas",
+  },
+  {
+    num: 12,
+    title: "Dominations: Road to Civilization",
+  },
+  {
+    num: 11,
+    title: "Scholars of the South Tigris",
+  },
+  {
+    num: 10,
+    title: "Pagan: Fate of Roanoke",
+  },
+  {
+    num: 9,
+    title: "Cloudspire",
+  },
+  {
+    num: 8,
+    title: "Stationfall",
+  },
+  {
+    num: 7,
+    title: "Harmony",
+  },
+  {
+    num: 6,
+    title: "Harmonies",
+  },
+  {
+    num: 5,
+    title: "GWT- New Zealand",
+  },
+  {
+    num: 4,
+    title: "Sky Team",
+  },
+  {
+    num: 3,
+    title: "Doggerland",
+  },
+  {
+    num: 2,
+    title: "Keep the Heroes Out!",
+  },
+  {
+    num: 1,
+    title: "Wonderland's Wars",
+  },
+];
 
 export default data;

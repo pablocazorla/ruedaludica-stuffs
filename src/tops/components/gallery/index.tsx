@@ -9,6 +9,8 @@ import {
   IconWeight,
   IconYear,
   IconPlayers,
+  IconGears,
+  IconPaint,
 } from "./icons";
 
 const DELAY = 3000;
@@ -86,33 +88,48 @@ const Gallery = () => {
           <div className="text-right title_num">{`${element.num}-`}</div>
           <div className="text-center">{element.title}</div>
         </div>
+        <div className="flex items-center justify-center gap-6 title_data">
+          <div className="flex items-center justify-center gap-2">
+            <div className="text-3xl">
+              <IconGears />
+            </div>
+            <div className="text-xl">{element.author}</div>
+          </div>
+          <div className="text-3xl leading-none">|</div>
+          <div className="flex items-center justify-center gap-2">
+            <div className="text-2xl">
+              <IconPaint />
+            </div>
+            <div className="text-xl">{element.artist}</div>
+          </div>
+        </div>
         <div className="flex items-center justify-center gap-2">
           <div className="title_badge">
-            <div className="">
+            <div>
               <IconYear />
               <div className="title_badge_text">{element.year}</div>
             </div>
           </div>
           <div className="title_badge">
-            <div className="">
+            <div>
               <IconPlayers />
               <div className="title_badge_text">{element.players}</div>
             </div>
           </div>
           <div className="title_badge">
-            <div className="">
+            <div>
               <IconAge />
               <div className="title_badge_text">{`${element.age}+`}</div>
             </div>
           </div>
           <div className="title_badge">
-            <div className="">
+            <div>
               <IconDuration />
               <div className="title_badge_text">{element.duration}</div>
             </div>
           </div>
           <div className="title_badge">
-            <div className="">
+            <div>
               <IconWeight />
               <div className="title_badge_text">{`${element.weight}/5`}</div>
             </div>

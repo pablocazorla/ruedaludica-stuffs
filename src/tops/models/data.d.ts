@@ -1,7 +1,9 @@
 export interface TopElement {
   num: number;
   title: string;
-  description: string;
+  bgg_id: string;
+  author: string;
+  artist: string;
   images: string[];
   players: string;
   duration: string;

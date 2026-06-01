@@ -20,12 +20,14 @@ export const MainContext = createContext({
   addElement: () => {},
   removeElement: () => {},
   toggleElementVisibility: () => {},
+  toggleElementHidden: () => {},
   moveUpDownElement: () => {},
-  removeElement: () => {},
   duplicateElement: () => {},
   imagePool: { current: {} },
   imagesLoaded: false,
   saveContent: () => {},
+  showHiddens: false,
+  setShowHiddens: () => {},
 });
 
 export const MainContextProvider = ({ children }) => {
@@ -35,6 +37,8 @@ export const MainContextProvider = ({ children }) => {
   const [elementSelected, set_elementSelected] = useState(null);
 
   const [moveRatio, setMoveRatio] = useState(1);
+
+  const [showHiddens, setShowHiddens] = useState(false);
 
   const elementListRef = useRef([]);
 
@@ -128,6 +132,21 @@ export const MainContextProvider = ({ children }) => {
     saveContent(newElementList);
   };
 
+  // TOGGLE VISIBILITY ELEMENT --------------------------------------
+  const toggleElementHidden = (elementId) => {
+    const newElementList = [...elementList].map((oldElement) => {
+      if (oldElement.id === elementId) {
+        return {
+          ...oldElement,
+          hidden: !oldElement.hidden,
+        };
+      }
+      return oldElement;
+    });
+    setElementList(newElementList);
+    saveContent(newElementList);
+  };
+
   // MOVE UP-DOWN ELEMENT --------------------------------------
   const moveUpDownElement = (index, dir) => {
     const newElementList = moveElement(elementList, index, index + dir);
@@ -138,7 +157,7 @@ export const MainContextProvider = ({ children }) => {
   // REMOVE ELEMENT --------------------------------------
   const removeElement = (id) => {
     const newElementList = [...elementList].filter(
-      (element) => element.id !== id
+      (element) => element.id !== id,
     );
     set_elementSelected(null);
     setElementList(newElementList);
@@ -227,14 +246,16 @@ export const MainContextProvider = ({ children }) => {
         setElementSelected,
         updateList,
         addElement,
-        removeElement,
         toggleElementVisibility,
+        toggleElementHidden,
         moveUpDownElement,
         removeElement,
         duplicateElement,
         imagePool,
         imagesLoaded,
         saveContent,
+        showHiddens,
+        setShowHiddens,
       }}
     >
       {children}

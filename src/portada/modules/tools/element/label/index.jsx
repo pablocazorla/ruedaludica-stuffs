@@ -4,10 +4,12 @@ import { IconChevronRight } from "../../../../components/icons/chevronRight";
 import cx from "@/utils/cx";
 import { IconEye } from "../../../../components/icons/eye";
 import ELEMENT_TYPES from "../../../../config/elementTypes";
+import { GhostIcon } from "../../../../components/icons/ghost";
 
 const Label = ({ element, index }) => {
   const {
     toggleElementVisibility,
+    toggleElementHidden,
     moveUpDownElement,
     portadaSizeId,
     setElementSelected,
@@ -117,6 +119,17 @@ const Label = ({ element, index }) => {
         }}
       >
         <div className="flex items-center gap-1 text-sm">{lab}</div>
+      </button>
+      <button
+        className={
+          "bg-black/10 cursor-pointer hover:bg-black/50 transition-colors py-3 px-2" +
+          (element.hidden ? " text-red-500" : "")
+        }
+        onClick={() => {
+          toggleElementHidden(element.id);
+        }}
+      >
+        <GhostIcon />
       </button>
     </div>
   );

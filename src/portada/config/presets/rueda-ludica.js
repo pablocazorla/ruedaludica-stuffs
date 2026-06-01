@@ -3,6 +3,7 @@ export const ruedaLudica = {
   elementList: [
     {
       id: "bce9abde-e848-4c73-b10a-083cf4e08ccb",
+      hidden: true,
       type: "image",
       youtube: {
         idImage: "cc9a1a1e-0681-435d-84eb-5c091602b696",
@@ -43,6 +44,7 @@ export const ruedaLudica = {
     },
     {
       id: "5d7bc67c-c2f8-448c-b35a-d9d751a6bc87",
+      hidden: false,
       type: "image",
       youtube: {
         name: "ace",
@@ -83,6 +85,7 @@ export const ruedaLudica = {
     },
     {
       id: "e7323720-d9f3-42f6-ad0f-98298f523627",
+      hidden: false,
       type: "image",
       youtube: {
         idImage: "3447bdf3-14cf-4437-8c80-a9c5ca462328",
@@ -123,6 +126,7 @@ export const ruedaLudica = {
     },
     {
       id: "0821dc8a-94ba-49c1-9805-b1727cc9c40c",
+      hidden: false,
       type: "image",
       youtube: {
         idImage: "663245be-0861-4024-9683-8c56e28504f1",
@@ -163,6 +167,7 @@ export const ruedaLudica = {
     },
     {
       id: "6535736d-0a60-48ae-9587-451e8c038fe2",
+      hidden: true,
       type: "rect",
       youtube: {
         x: 0,
@@ -195,6 +200,7 @@ export const ruedaLudica = {
     },
     {
       id: "6c116b69-6e4a-44ae-96ca-e20d69332f77",
+      hidden: true,
       type: "rect",
       youtube: {
         x: 0,
@@ -227,6 +233,7 @@ export const ruedaLudica = {
     },
     {
       id: "261493ed-1829-49f6-90a7-dbf50b6b620f",
+      hidden: true,
       type: "rect",
       youtube: {
         x: 0,
@@ -259,6 +266,7 @@ export const ruedaLudica = {
     },
     {
       id: "5925d7bf-6578-4a2a-b154-2089ffd67780",
+      hidden: false,
       type: "rect",
       youtube: {
         x: 0,
@@ -291,6 +299,7 @@ export const ruedaLudica = {
     },
     {
       id: "3b781cdf-d7c8-4bdb-98ce-5a59184deb78",
+      hidden: true,
       type: "image",
       youtube: {
         idImage: "6019e6b1-edfe-4afe-9a25-9bbe8b1eb919",
@@ -331,6 +340,7 @@ export const ruedaLudica = {
     },
     {
       id: "92780d2c-db91-40d2-b86e-2e913ea70f63",
+      hidden: true,
       type: "image",
       youtube: {
         idImage: "12b5961c-3b8f-48d7-9c18-a14b8efa227d",
@@ -371,6 +381,7 @@ export const ruedaLudica = {
     },
     {
       id: "ffaa4af5-2cb6-4793-ae04-c1d32029313e",
+      hidden: true,
       type: "image",
       youtube: {
         idImage: "bb900043-6d9f-476b-bc45-30d96e18fc3d",
@@ -411,6 +422,7 @@ export const ruedaLudica = {
     },
     {
       id: "04707e48-482d-4d00-bd83-0e8dbeb52b42",
+      hidden: false,
       type: "text",
       youtube: {
         text: "32",
@@ -465,6 +477,7 @@ export const ruedaLudica = {
     },
     {
       id: "1b9e92b4-31ce-4170-a061-9effd13aea89",
+      hidden: true,
       type: "image",
       youtube: {
         idImage: "a02bc134-c322-409d-9c4f-302f634a2a3d",
@@ -504,47 +517,8 @@ export const ruedaLudica = {
       },
     },
     {
-      instagram: {
-        idImage: "0dadf46d-d2da-45cb-b480-38e031ad7168",
-        name: "",
-        url: "http://res.cloudinary.com/cazu/image/upload/v1755524866/kihfttvltpxap1abofde.png",
-        x: 0,
-        y: 855,
-        scale: 1.035,
-        opacity: 1,
-        crop: false,
-        show_crop: false,
-        x_crop: 0,
-        y_crop: 0,
-        width_crop: 300,
-        height_crop: 300,
-        blur: 0,
-        shadow: "",
-        visible: true,
-      },
-      id: "cde3a4ff-29c1-4cac-9a9b-a34804eae8d6",
-      type: "image",
-      youtube: {
-        idImage: "0dadf46d-d2da-45cb-b480-38e031ad7168",
-        name: "",
-        url: "http://res.cloudinary.com/cazu/image/upload/v1755524866/kihfttvltpxap1abofde.png",
-        x: 0,
-        y: 855,
-        scale: 1.035,
-        opacity: 1,
-        crop: false,
-        show_crop: false,
-        x_crop: 0,
-        y_crop: 0,
-        width_crop: 300,
-        height_crop: 300,
-        blur: 0,
-        shadow: "",
-        visible: false,
-      },
-    },
-    {
       id: "828a9711-871b-4d73-935c-8e796f10824a",
+      hidden: false,
       type: "text",
       youtube: {
         text: "Especial",
@@ -599,6 +573,7 @@ export const ruedaLudica = {
     },
     {
       id: "4156935e-b76e-4170-a051-d407c1a76839",
+      hidden: false,
       type: "text",
       youtube: {
         text: "Tormenta de juegos",

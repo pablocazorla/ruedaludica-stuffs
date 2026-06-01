@@ -15,7 +15,7 @@ import getUUID from "@/utils/getUUID";
 const tabList = Object.values(ELEMENT_TYPES).map(
   ({ name: text, type: value }) => {
     return { text, value };
-  }
+  },
 );
 
 const AddElement = () => {
@@ -29,7 +29,7 @@ const AddElement = () => {
   const [currentTab, setCurrentTab] = useState(tabList[0].value);
 
   const [newElement, setNewElement] = useState(
-    ELEMENT_TYPES[tabList[0].value].defaultValue
+    ELEMENT_TYPES[tabList[0].value].defaultValue,
   );
 
   const onChangeTab = (value) => {
@@ -89,6 +89,7 @@ const AddElement = () => {
               },
               id: getUUID(),
               type: currentTab,
+              hidden: false,
             });
             toggle();
           },

@@ -344,22 +344,8 @@ const data: Data = {
 };
 
 /*
-
-15- Los Pilares de la Tierra
-14- Rock Hard 1977
-13- Clank! Catacumbas
-12- Dominations: Road to Civilization
-11- Scholars of the South Tigris
-10- Pagan: Fate of Roanoke
-9- Cloudspire
-8- Stationfall
-7- Harmony
-6- Harmonies
-5- GWT- New Zealand
-4- Sky Team
-3- Doggerland
-2- Keep the Heroes Out!
-1- Wonderland's Wars
+15- Piratas de Maracaibo
+14- Tiwanaku
 */
 
 export const previousTop = [

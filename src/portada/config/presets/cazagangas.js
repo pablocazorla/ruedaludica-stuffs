@@ -3,6 +3,7 @@ export const cazangangas = {
   elementList: [
     {
       id: "bce9abde-e848-4c73-b10a-083cf4e08ccb",
+      hidden: true,
       type: "image",
       youtube: {
         idImage: "cc9a1a1e-0681-435d-84eb-5c091602b696",
@@ -43,6 +44,7 @@ export const cazangangas = {
     },
     {
       id: "5d7bc67c-c2f8-448c-b35a-d9d751a6bc87",
+      hidden: true,
       type: "image",
       youtube: {
         name: "cazagangas",
@@ -83,6 +85,7 @@ export const cazangangas = {
     },
     {
       id: "6535736d-0a60-48ae-9587-451e8c038fe2",
+      hidden: true,
       type: "rect",
       youtube: {
         x: 0,
@@ -115,6 +118,7 @@ export const cazangangas = {
     },
     {
       id: "eb3dd402-9ab7-4637-96ef-0dc2cd5e9c70_d",
+      hidden: true,
       type: "rect",
       youtube: {
         x: -10,
@@ -147,6 +151,7 @@ export const cazangangas = {
     },
     {
       id: "5925d7bf-6578-4a2a-b154-2089ffd67780",
+      hidden: true,
       type: "rect",
       youtube: {
         x: -10,
@@ -179,6 +184,7 @@ export const cazangangas = {
     },
     {
       id: "6c116b69-6e4a-44ae-96ca-e20d69332f77",
+      hidden: true,
       type: "rect",
       youtube: {
         x: 0,
@@ -211,6 +217,7 @@ export const cazangangas = {
     },
     {
       id: "3b781cdf-d7c8-4bdb-98ce-5a59184deb78",
+      hidden: true,
       type: "image",
       youtube: {
         idImage: "6019e6b1-edfe-4afe-9a25-9bbe8b1eb919",
@@ -251,6 +258,7 @@ export const cazangangas = {
     },
     {
       id: "92780d2c-db91-40d2-b86e-2e913ea70f63",
+      hidden: true,
       type: "image",
       youtube: {
         idImage: "12b5961c-3b8f-48d7-9c18-a14b8efa227d",
@@ -290,47 +298,8 @@ export const cazangangas = {
       },
     },
     {
-      instagram: {
-        idImage: "0dadf46d-d2da-45cb-b480-38e031ad7168",
-        name: "",
-        url: "http://res.cloudinary.com/cazu/image/upload/v1755524866/kihfttvltpxap1abofde.png",
-        x: 0,
-        y: 855,
-        scale: 1.035,
-        opacity: 1,
-        crop: false,
-        show_crop: false,
-        x_crop: 0,
-        y_crop: 0,
-        width_crop: 300,
-        height_crop: 300,
-        blur: 0,
-        shadow: "",
-        visible: true,
-      },
-      id: "cde3a4ff-29c1-4cac-9a9b-a34804eae8d6",
-      type: "image",
-      youtube: {
-        idImage: "0dadf46d-d2da-45cb-b480-38e031ad7168",
-        name: "",
-        url: "http://res.cloudinary.com/cazu/image/upload/v1755524866/kihfttvltpxap1abofde.png",
-        x: 0,
-        y: 855,
-        scale: 1.035,
-        opacity: 1,
-        crop: false,
-        show_crop: false,
-        x_crop: 0,
-        y_crop: 0,
-        width_crop: 300,
-        height_crop: 300,
-        blur: 0,
-        shadow: "",
-        visible: false,
-      },
-    },
-    {
       id: "4156935e-b76e-4170-a051-d407c1a76839",
+      hidden: true,
       type: "text",
       youtube: {
         text: "Top 10 Cazagangas",
@@ -385,6 +354,7 @@ export const cazangangas = {
     },
     {
       id: "828a9711-871b-4d73-935c-8e796f10824a",
+      hidden: false,
       type: "text",
       youtube: {
         text: "Agosto 2025",
